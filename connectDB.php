@@ -1,7 +1,7 @@
 <?php
-    $username = "project";
-    $pw = "projectpw";
-    $db = "forumdb";
+    $username = "61900635";
+    $pw = "61900635";
+    $db = "db_61900635";
     $host = "localhost";
 
     $conn = new mysqli($host, $username, $pw, $db);

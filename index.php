@@ -28,11 +28,18 @@
     while ($row = mysqli_fetch_assoc($result)) {
         echo '
         <div class="wrapper">
-            <div class="title"><a href="viewPost.php">Title: ' . $row["title"] . '</a></div>
+        <div class="allposts">
+            <div class="title"><a href="viewPost.php?id=' . $row["postid"] . '">Title: ' . $row["title"] . '</a></div>
             <div class="category">Category: ' . $row["category"] . '</div>
-            <div class="content">Description: ' . $row["content"] . '</div>
-            <div class="content">Likes: ' . $row["likes"] . '</div>
-            <div class="content">Comments: ' . $row["comments"] . '</div><br><br>
+            <div class="posted">Posted on: ' . $row["postdate"] . '</div>
+            <div class="likes">Likes: ' . $row["likes"] . '</div>
+            ';
+        $sql = "select count(*) as numComments from comments where postid = " . $row["postid"] . ";";
+        $result2 = mysqli_query($conn, $sql);
+        $comm = mysqli_fetch_assoc($result2);
+        echo '
+            <div class="commentcount">Comments: ' . $comm["numComments"] . '</div><br><br>
+        </div>
         </div>
         ';
     }

@@ -1,7 +1,11 @@
 <?php session_start() ?>
 <div class="navbar">
     <a href="index.php">HOME</a>
-    <input type="text" id="searchPost" name="searchPost" placeholder="Search...">
+    <form action="search.php" method="get" id="searchPost">
+        <input type="text" id="searchposts" name="searchposts" placeholder="Search...">
+        <input type="submit" name="searchpost" placeholder="Search..." value="Search Post">
+    </form>
+    
     <?php
     if(isset($_SESSION["name"])){
         if($_SESSION["name"] === "admin"){

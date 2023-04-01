@@ -25,7 +25,7 @@
     
     ?>
     <div class="wrapper">
-        <h2>Create New Post</h2>
+        <h2 style="text-align:center">Create New Post</h2>
         <div class="postForm">
             <form action="createPost.php" method="POST" class="userForm">
                 <div class="form-group">

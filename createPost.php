@@ -21,13 +21,13 @@ if (isset($_POST["submit"])){
     $row = mysqli_fetch_assoc($result);
     $uid = $row["id"];
 
-    $sql = "insert into posts(userid, category, title, content, postdate, likes, comments) values(?, ?, ?, ?, CURRENT_TIMESTAMP, ?, ?);";
+    $sql = "insert into posts(userid, category, title, content, postdate, likes) values(?, ?, ?, ?, CURRENT_TIMESTAMP, ?);";
     $stmt = mysqli_stmt_init($conn);
     if(!mysqli_stmt_prepare($stmt, $sql)){
         header("Location:register.php?error=sql");
         exit();
     }
-    mysqli_stmt_bind_param($stmt, "isssii", $uid, $category, $title, $desc, $zero, $zero);
+    mysqli_stmt_bind_param($stmt, "isssi", $uid, $category, $title, $desc, $zero);
     if(!mysqli_stmt_execute($stmt)){
         header("location: post.php?error=sql");
     }

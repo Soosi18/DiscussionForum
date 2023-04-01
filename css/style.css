@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     background-color: black;
     overflow: hidden;
 }
@@ -6,14 +6,14 @@
 table {
     width: 500px;
     border: 1px solid #000;
-    margin:auto;
-  }
-
-body{
-    margin:0px;
+    margin: auto;
 }
 
-.navbar a{
+body {
+    margin: 0px;
+}
+
+.navbar a {
     color: white;
     float: left;
     text-align: center;
@@ -22,53 +22,81 @@ body{
     text-decoration: none;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     background-color: gray;
     color: lightskyblue;
 }
 
-#searchPost{
+#searchPost {
     float: left;
     padding: 0.70em 0.70em;
 }
 
-#info{
+
+#info {
     text-align: center;
 }
 
-.registerForm{
+.registerForm {
     display: block;
     text-align: center;
 }
 
-.postForm{
+#postinfo{
+    border: 1px solid black;
+}
+
+.postwrapper{
+    border: 1px solid black;
+}
+
+.commentwrapper{
+    border: 1px solid black;
+}
+
+.allposts{
+    border: 1px solid black;
+    margin-bottom: 0.25em;
+}
+
+.inner{
+    margin: 0.25em;
+    border: 1px solid black;
+    padding: 0.25em;
+}
+
+.content{
+    border: 1px solid black;
+    margin-top: 0.25em;
+}
+
+.postForm {
     display: block;
     text-align: center;
 }
 
-.userForm{
+.userForm {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
 }
 
-.submit{
+.submit {
     display: block;
     text-align: center;
     padding: 0.25em;
 }
 
-.form-group{
+.form-group {
     padding: 0.25em;
 }
 
-.red{
+.red {
     border: 10px solid red;
 }
 
-#pp{
+#pp {
     width: 50%;
     height: auto;
 }
-
