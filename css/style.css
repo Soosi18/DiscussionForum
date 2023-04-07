@@ -13,6 +13,10 @@ body {
     margin: 0px;
 }
 
+.wrapper{
+    margin-bottom: 100px;
+}
+
 table, td, th{
     border-collapse: collapse;
     border: 1px solid black;
