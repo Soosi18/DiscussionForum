@@ -9,20 +9,20 @@
 
 <body>
     <?php include_once 'header.php';
-    if(isset($_GET["status"])){
+    if (isset($_GET["status"])) {
         $status = $_GET["status"];
-        if($status == "success"){
+        if ($status == "success") {
             echo "<script>alert(\"Successfully Registered! You can now Log In!\");</script>";
         }
     }
 
-    if(isset($_GET["error"])){
+    if (isset($_GET["error"])) {
         $error = $_GET["error"];
-        if($error == "sql"){
-            echo "<script>alert(\"Unexpected Error Occured. Please Try Again\");</script>";    
+        if ($error == "sql") {
+            echo "<script>alert(\"Unexpected Error Occured. Please Try Again\");</script>";
         }
     }
-    
+
     ?>
     <div class="wrapper">
         <h2 style="text-align:center">Create New Post</h2>
@@ -51,5 +51,7 @@
             </form>
         </div>
     </div>
+    <?php include_once 'footer.php'; ?>
 </body>
+
 </html>

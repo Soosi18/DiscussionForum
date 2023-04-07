@@ -16,7 +16,7 @@
             echo "<script>alert(\"Account Deleted Successfully!\");</script>";
         }
     }
-    
+
     require_once "connectDB.php";
 
     $sql = "SELECT * from users where username != \"admin\"";
@@ -50,3 +50,7 @@
             </table>
         </div>
     </div>
+    <?php include_once 'footer.php'; ?>
+</body>
+
+</html>

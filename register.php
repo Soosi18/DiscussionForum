@@ -9,17 +9,17 @@
 </head>
 
 <body>
-<?php include_once 'header.php';
-    if(isset($_GET["error"])){
+    <?php include_once 'header.php';
+    if (isset($_GET["error"])) {
         $error = $_GET["error"];
-        if($error == "sql"){
-            echo "<script>alert(\"Unexpected Error Occured. Please Try Again\");</script>";    
+        if ($error == "sql") {
+            echo "<script>alert(\"Unexpected Error Occured. Please Try Again\");</script>";
         }
-        if($error == "usertaken"){
+        if ($error == "usertaken") {
             echo "<script>alert(\"Username/E-mail Already In Use. Please Try Again\");</script>";
         }
     }
-?>
+    ?>
     <div class="wrapper">
 
         <h2 id="info">Register New Account</h2>
@@ -54,6 +54,7 @@
 
 
     </div>
+    <?php include_once 'footer.php'; ?>
 </body>
 
 </html>

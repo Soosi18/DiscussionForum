@@ -51,7 +51,7 @@
     } else {
         header("location:index.php?error=sql");
     }
-    ?>
+    include_once 'footer.php';?>
 </body>
 
 </html>

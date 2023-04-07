@@ -13,6 +13,12 @@ body {
     margin: 0px;
 }
 
+table, td, th{
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 0.25em;
+  }
+
 .navbar a {
     color: white;
     float: left;
@@ -26,6 +32,17 @@ body {
     background-color: gray;
     color: lightskyblue;
 }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+   
 
 #searchPost {
     float: left;
